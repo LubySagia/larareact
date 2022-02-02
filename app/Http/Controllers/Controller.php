@@ -6,9 +6,9 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
-use Flugg\Responder\Http\MakesResponses;
+use App\Helpers\ResponseHelper;
 
 class Controller extends BaseController
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests, MakesResponses;
+    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
